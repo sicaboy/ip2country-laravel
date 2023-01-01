@@ -20,8 +20,8 @@ class Ip2countryLaravel
      * @param string $ip
      * @return string
      */
-    public function getCountry(string $ip): string
+    public function getCountryCode(string $ip): string
     {
-        return $this->client->getCountry($ip);
+        return $this->client->getCountryCode($ip);
     }
 }

@@ -8,7 +8,7 @@ class Ip2countryClient
      * @param string $ip
      * @return string
      */
-    public function getCountry(string $ip): string
+    public function getCountryCode(string $ip): string
     {
         $url = config('ip2country.api_url') . '/' . $ip;
         $ch = curl_init();
