@@ -33,9 +33,13 @@ return [
 ## Usage
 
 ```php
-$ip2countryLaravel = new Sicaboy\Ip2countryLaravel();
-echo $ip2countryLaravel->getCountryCodeByIp('1.1.1.1');
+use Sicaboy\Ip2countryLaravel\Facades\Ip2country;
+
+Ip2countryLaravel::getCountryCode('1.1.1.1');
+Ip2countryLaravel::getCountryCode(request()->ip())
 ```
+
+You will get the country code of the IP address.
 
 ## Testing
 
