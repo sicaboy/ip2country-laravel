@@ -1,0 +1,58 @@
+{
+    "name": "sicaboy/ip2country-laravel",
+    "description": "Laravel Client for ip2country",
+    "keywords": [
+        "sicaboy",
+        "laravel",
+        "ip2country-laravel"
+    ],
+    "homepage": "https://github.com/sicaboy/ip2country-laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sicaboy",
+            "email": "sica@qq.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "^7.2|^8.0",
+        "illuminate/support": "^8.0|^9.0",
+        "ext-curl": "*"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.4",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sicaboy\\Ip2countryLaravel\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sicaboy\\Ip2countryLaravel\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sicaboy\\Ip2countryLaravel\\Ip2countryLaravelServiceProvider"
+            ],
+            "aliases": {
+                "Ip2countryLaravel": "Sicaboy\\Ip2countryLaravel\\Facades\\Ip2countryLaravel"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
