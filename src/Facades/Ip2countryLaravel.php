@@ -5,7 +5,7 @@ namespace Sicaboy\Ip2countryLaravel\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static string getCountryCode()
+ * @method static string getCountryCode(string $ip)
  * @see \Sicaboy\Ip2countryLaravel\Ip2countryLaravel
  */
 class Ip2countryLaravel extends Facade
